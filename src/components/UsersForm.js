@@ -66,7 +66,7 @@ const UsersForm = ({addUsers, userSelect, UpdateUsers, setUserSelect,isTrue,setI
 
 
     const cancel =(isTrue)=>{
-        if(isTrue==false){
+        if(isTrue===false){
         
             setUserSelect(null);
         }
