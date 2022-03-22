@@ -1,38 +1,247 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lato:ital,wght@0,400;1,700&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+	background: #263849; 
+  font-family: 'Lato', sans-serif;
+}
+
+/* .body{
+
+} */
+
+.container{
+  margin: auto;
+  /* background-color: rgb(67, 67, 163); */
+  gap: 20px;
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.List{
+  border-radius: 20px;
+  width: 350px;
+  height: 280px;
+  /* border:1px solid black; */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+  padding:15px;
+}
+
+.List,.List>li,.flex-btns,.email>p, .birthday>P, .birthday>P>i {
+	background: #41506b; 
+  font-size: 18px;
+
+}
+.List>li{
+  
+  list-style: none;
+	/* background: #41506b;  */
+
+  /* border: #0000; */
+  /* padding: 10px; */
+  
+}
+
+.List>.name{
+  
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+
+  padding-top: 10px;
+  padding-bottom: 12px;
+  margin: 0 20px ;
+  border-bottom: 1px solid rgb(189, 178, 178);
+  text-transform: capitalize;
+  color: #171920;
+}
+
+.email{
+  
+  padding-top: 5px;
+}
+
+.flex-btns{
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+	/* background: #41506b;  */
+
+  gap: 15px;
+}
+
+.flex-btns>button{
+  padding: 8px;
+  margin-top: 15px;
+  border-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.flex-btns>.delete{
+  background-color: tomato;
+}
+
+
+.email, .birthday {
+  color: rgb(189, 178, 178)}
+
+.email>p, .birthday>P {
+  color: #171920;
+  
+}
+
+.email{
+  margin: 0 20px ;
+  padding-bottom: 6px;
+
+}
+
+.birthday {  
+  margin: 0 20px ;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgb(189, 178, 178);
+}
+
+/* .container-form{
+  width: 350px;
+  margin: auto;
+  background-color: #4458a0;
+  padding: 30px;
+} */
+
+.container-form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+.addBnt{
+  height: 50px;
+
+  background-color: rgb(16, 17, 24);
+  border-color: transparent;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 22px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+ 
+  margin: 40px 0;
+  
+}
+
+
+.NameForm, .NameForm>label,.NameForm>input, .LastNameForm, .LastNameForm>label, .LastNameForm>input,
+.birthdayForm, .birthdayForm>label, .birthdayForm>input, .emailForm,.emailForm>label,.emailForm>input,
+.passwordForm,.passwordForm>label, .passwordForm>input, .buttonsForm,.form, .form>h2, section{
+  background-color: rgb(169, 175, 189);
+  
+}
+
+
+
+
+.form {
+  max-width: 500px;
+	width: 90vw;
+	height: 550px;
+	padding: 25px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 28px;	
+  line-height: 32px;
+
+}
+
+.form>h2{
+  padding-bottom:10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form>div{
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.form>div>label{    
+  margin-left: 15px;
+
+}
+.form>div>input {
+  
+    line-height: 40px;
+    display: inline-block;
+    background: rgb(133, 138, 138);
+    border:transparent;
+    border-radius: 5px;
+    color: #393939;
+    font-size: 18px;
+    width: 90%;
+    margin-left: 15px;
+    padding: 3px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btnsForm{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap:30px ;
+  justify-content: flex-end;
+  padding-right:30px;
 }
 
-.App-link {
-  color: #61dafb;
+.btnsForm>button{
+  padding: 10px 20px;
+  border: transparent;
+  
+  background-color: rgb(16, 17, 24);
+  border-color: transparent;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 18px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+ 
+  margin-top:20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+@media(min-width: 765px){
+    
+.container{
+  margin: auto;
+  gap: 20px;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 750px;
+
+  
+}
+
+@media(min-width: 1100px){
+  .container{
+
+  grid-template-columns: repeat(3,1fr);}
+}
 }
